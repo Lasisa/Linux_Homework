@@ -1,0 +1,25 @@
+Loading...
+ 
+Welcome to JS/Linux (i586)
+ 
+Use 'vflogin username' to connect to your account.
+You can create a new account at https://vfsync.org/signup .
+Use 'export_file filename' to export a file to your computer.
+Imported files are written to the home directory.
+ 
+localhost:~# mkdir /home/animals
+localhost:~# mkdir /home/animals/dogs
+localhost:~# mkdir /home/animals/cats
+localhost:~# mkdir /home/animals/fish
+localhost:~# touch /home/animals/dogs/pluto
+localhost:~# touch /home/animals/fish/nemo
+localhost:~# touch /home/animals/cats/garfield
+localhost:~# touch /tmp/adam
+localhost:~# mkdir -p /home/humans
+localhost:~# cp /tmp/adam /home/humans
+localhost:~# touch /tmp/evA
+localhost:~# mv /tmp/evA /opt/eve
+localhost:~# mv /opt/eve /home/humans
+localhost:~# ls /home/humans
+adam  eve
+localhost:~#
