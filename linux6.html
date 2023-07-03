@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for ((i=1; i<=10; i++))
+do
+    echo "$(date +'%H:%M:%S') $(ps -ef | wc -l)" # Вывод даты и количества процессов
+    sleep 5 # Интервал в 5 секунд
+done
+echo -e '#!/bin/bash\n\nfor ((i=1; i<=10; i++))\ndo\n    echo "$(date +\'%H:%M:%S\') $(ps -ef | wc -l)"\n    sleep 5\n\n' > sleeper.sh
+cat /proc/cpuinfo > processor_info.txt
+cat /etc/os-release | grep -oP 'NAME=\K[^"]+' > os_info.txt
+cat /etc/os-release | grep -oP 'NAME=\K[^"]+' | awk -F ' ' '{print $1}' > os_name.txt
+for ((i=50; i<=100; i++)); do touch "$i.txt"; done
