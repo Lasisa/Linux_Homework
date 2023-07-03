@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Schritt 1: Erstellen des Skriptdatei myfirstbashscript.sh
+touch myfirstbashscript.sh
+
+# Schritt 2: Setzen der Ausführungsrechte für das Skript
+chmod +x myfirstbashscript.sh
+
+# Schritt 3: Deklaration und Zuweisung der USER-Variablen
+USER="Ihr Name"
+
+# Schritt 4-7: Skriptinhalt
+echo "Datum: $(date)"
+echo "Hallo $USER!"
+echo "Aktuelles Verzeichnis: $(pwd)"
